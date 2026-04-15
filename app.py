@@ -20,9 +20,9 @@ st.set_page_config(page_title="Health Assistant",
 # ----------------------------------------------------------
 working_dir = os.path.dirname(os.path.abspath(__file__))
 
-diabetes_model = pickle.load(open(r"C:\Users\vamsi\OneDrive\Documents\csp-project\diabetes_model (2).sav", 'rb'))
-heart_disease_model = pickle.load(open(r"C:\Users\vamsi\OneDrive\Documents\csp-project\heart_model.sav", 'rb'))
-parkinsons_model = pickle.load(open(r"C:\Users\vamsi\OneDrive\Documents\csp-project\parkinsons_model.sav", 'rb'))
+diabetes_model = pickle.load(open(f'{working_dir}/saved_models/diabetes_model.sav', 'rb'))
+heart_disease_model = pickle.load(open(f'{working_dir}/saved_models/heart_disease_model.sav', 'rb'))
+parkinsons_model = pickle.load(open(f'{working_dir}/saved_models/parkinsons_model.sav', 'rb'))
 
 # ----------------------------------------------------------
 # Sidebar Navigation
